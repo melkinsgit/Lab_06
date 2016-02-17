@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 06 Pt01 Adv</title>
+
+    <!--comment THIS-->
+    <link href="M%20Elkins%20Lab%2006%20Pt01%20Adv%20CSS.css" type="text/css" rel="stylesheet">
+
+    <!--comment THIS-->
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+
+    <script>
+
+        // http://stackoverflow.com/questions/23289944/jquery-event-handler-for-input-type-text
+        $('#btnAddToList').on('click',function (){
+            console.log("In the click");
+            addItem();
+        });
+
+        function addItem () {
+            var statement = $('input').val();
+            console.log("Event was triggered and the text is " + statement);
+        }
+
+    </script>
+</head>
+<body>
+
+<!--Create a web page with an empty list, and an input box. You will use this to create a to do list. When you type something in the input box, it will be added to the list.-->
+
+    <div>Enter a new ToDo Item
+        <input type="text" size="45px">
+        <button id="btnAddToList">Add it to My ToDo List</button>
+    </div>
+
+    <ul class="listHeader" id="listTitle">My ToDo List</ul>
+
+
+<!--Decide on one style to represent items that are not done.-->
+
+<!--Decide on another style to represent items that you have done.  Create a style sheet for both of these styles.-->
+
+<!--When you click on one of the list items, it should toggle between done and not done. You should use the toggleClass method to add a class; so that the appropriate CSS style is applied.-->
+
+<!--Add a button to remove the items you have done. When you click the button, all of the items that are done will be removed.-->
+
+</body>
+</html>

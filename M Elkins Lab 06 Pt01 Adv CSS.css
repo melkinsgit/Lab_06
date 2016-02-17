@@ -1,0 +1,8 @@
+body {
+    color: #556b2f;
+}
+
+#listTitle, div, input, #btnAddToList {
+    padding: 3px;
+    margin: 5px;
+}

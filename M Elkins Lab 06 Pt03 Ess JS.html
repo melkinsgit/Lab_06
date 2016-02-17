@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 06 Pt03 Ess JS</title>
+
+
+</head>
+<body>
+<table>
+    <tr><th>Animal</th><th>Color</th></tr>
+    <tr><td>Zebra</td><td>Black and white</td></tr>
+    <tr><td>Tiger</td><td>Black and orange</td></tr>
+    <tr><td>Clownfish</td><td>Orange and white</td></tr>
+</table>
+
+<script>
+
+    var tableHead = document.getElementsByTagName("th");
+    for (var i =0; i < tableHead.length; i++){
+        tableHead[i].style.background = "#9370db";
+        tableHead[i].style.color = "black";
+    }
+
+    // querySelectorAll was Anna's clever idea
+    var evenRows = document.querySelectorAll("tr:nth-child(even)")
+    for (var i = 0; i < evenRows.length; i++){
+        evenRows[i].style.background = "#00fa9a";
+        evenRows[i].style.color = "black";
+    }
+
+    var oddRows = document.querySelectorAll("tr:nth-child(odd)")
+    for (var i = 0; i < oddRows.length; i++){
+        oddRows[i].style.background = "#adff2f";
+        oddRows[i].style.color = "black";
+    }
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+M Elkins Lab 05 Pt03 Ess Comments
+
+In what situations would each method - CSS, JavaScript, JQuery - be most appropriate?
+
+CSS: This is incredibly simple. It also makes it unneccesary to even access the html file if you're working with a separate CSS file. It would be very easy to try out different colors, for example. Just one minor change without the danger of messing up my html file.
+
+JavaScript: I think this is in many ways the most reliable, especially if I were doing it from scratch. I would probably add a class name to identify elements that were even, and a class name for odd, use those class names and just set up style definitions for even and odd -- and the header. Using the querySelectAll made it infintely simpler. Using JS, however, requires more complex code than the jQuery - needing to use for loops, and discovering the limitations of the for each (that they iterate through properties of a tag chosen) over the for loop.
+
+jQuery: This is so simple. There are two reasons not to use it in my opinion. First, if the program is so small that it will be significantly slowed by jQuery. Second, jQuery was great here because there is a tr:even element to search for. But if there weren't, and I had to work with if statements, I would be more comfortable in js than jQuery.
+
+How much does it matter when you use which method?
+
+I think the only real issue is the fact that jQuery requires the library download. The other reason to use one method or another would be the standards of other programmers I'm working with.

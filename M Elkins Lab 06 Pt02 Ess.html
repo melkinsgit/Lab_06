@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 06 Pt02 Ess</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+
+    <!--Use JQuery selectors to make the table headers purple; and then the rows alternatively blue and green-->
+    <script>
+
+        $('document').ready( function () {
+
+            changeColors();
+            colorRows();
+
+        });
+
+        function changeColors() {
+            $('th').addClass("coloredHeader")
+
+        }
+
+        function colorRows() {
+            $('tr:even').addClass("evenLine");
+            $('tr:odd').addClass("oddLine")
+        }
+
+    </script>
+
+    <style>
+
+        .coloredHeader{
+            background: #9370db;
+            color: black;
+        }
+
+        .evenLine{
+            background: #adff2f;
+            color: black;
+        }
+
+        .oddLine{
+            background: #00fa9a;
+            color: black;
+        }
+
+    </style>
+
+</head>
+<body>
+<table>
+    <tr><th>Animal</th><th>Color</th></tr>
+    <tr><td>Zebra</td><td>Black and white</td></tr>
+    <tr><td>Tiger</td><td>Black and orange</td></tr>
+    <tr><td>Clownfish</td><td>Orange and white</td></tr>
+</table>
+</body>
+</html>

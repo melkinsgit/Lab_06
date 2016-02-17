@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 06 Pt 01 Ess</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+</head>
+
+<style>
+
+    .hide {
+        visibility: hidden;
+    }
+
+</style>
+
+<script>
+    $('document').ready(function () {
+        $('span').css({"font-weight": "bold"});
+        $('h2').click(function () {
+            $(this).css({"background": "green"});
+        });
+        $('p').hover(hoverOut, hoverIn);
+        $('#make_h1_blue').click(turnBlue);
+        $('#remove_not_important').click(removeNotImp);
+    });
+
+    function hoverOut () {
+        $(this).addClass("hide");
+    }
+
+    function hoverIn () {
+        $(this).removeClass("hide");
+    }
+
+    function turnBlue () {
+        $('h1').css({"color" : "blue"});
+    }
+
+    function removeNotImp () {
+        $('.not_important').remove();
+    }
+
+</script>
+<body>
+
+<h1>JQuery Selector Practice</h1>
+
+<h2>Click on the H2 elements, like me, to give them a green background.</h2>
+
+<p>Hide me when the <span>mouse</span> hovers over me</p>
+
+<P>Hide me on mouseover too! <span>Make sure I come back</span> when the mouse moves elsewhere</P>
+
+<h1>A list of items</h1>
+
+<P>Some of these things are important, some are not</P>
+<ol>
+    <li class="not_important">First thing is not important</li>
+    <li class="not_important">Second thing is also not important</li>
+    <li>But, Third thing is <span>important</span></li>
+</ol>
+
+<h2>Buttons</h2>
+
+<button type="button" id="make_h1_blue">Make H1 items blue</button>
+
+<button type="button" id="remove_not_important">Remove not important items</button>
+</body>
+</html>
