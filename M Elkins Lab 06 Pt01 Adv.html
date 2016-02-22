@@ -10,21 +10,7 @@
     <!--comment THIS-->
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
 
-    <script>
-    $('document').ready(function() {
-        // http://stackoverflow.com/questions/23289944/jquery-event-handler-for-input-type-text
-        $('#btnAddToList').on('click',function (){
-            console.log("In the click");
-            addItem();
-        });
-    });
-
-        function addItem () {
-            var statement = $('input').val();
-            console.log("Event was triggered and the text is " + statement);
-        }
-
-    </script>
+    <script src="M%20Elkins%20Lab%2006%20Pt01%20Adv%20JS.js"></script>
 </head>
 <body>
 
@@ -33,9 +19,10 @@
     <div>Enter a new ToDo Item
         <input type="text" size="45px">
         <button id="btnAddToList">Add it to My ToDo List</button>
+        <ul class="listHeader" id="listTitle">My ToDo List</ul>
     </div>
 
-    <ul class="listHeader" id="listTitle">My ToDo List</ul>
+
 
 
 <!--Decide on one style to represent items that are not done.-->

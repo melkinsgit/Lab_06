@@ -6,3 +6,14 @@ body {
     padding: 3px;
     margin: 5px;
 }
+
+.listElement {
+    padding: 5px;
+    margin: 0 0 0 25px;
+    color: #ff0000;
+}
+
+.done{
+    color: #00008b;
+    font-weight: bold;
+}
