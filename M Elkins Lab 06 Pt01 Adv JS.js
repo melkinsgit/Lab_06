@@ -6,6 +6,7 @@ $('document').ready(function() {
     $('#btnAddToList').on('click',function (){
         addItem();
     });
+
 });
 
 function addItem () {
@@ -15,10 +16,9 @@ function addItem () {
     var theList = $('#listTitle');
     var $newListItem =$('<li class="listElement"></li>');
     $newListItem.append(statement);
-    //$newListItem.addClass('notDone');
-    $('.listElement').click(function() {
-        $(this).toggleClass('done');
-    });
-
+    $newListItem.addClass('notDone');
     theList.append($newListItem);
+    $('.listElement').on('click', function() {
+        $(this).toggleClass('done notDone');
+    });
 }
