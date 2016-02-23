@@ -18,6 +18,8 @@ function addItem () {
     $newListItem.append(statement);
     $newListItem.addClass('notDone');
     theList.append($newListItem);
+
+    // once I've got a new list element, appended the text, given it a start state of notDone by adding that class, and then appended that whole li element to the ul, I want to add the function to it
     $('.listElement').on('click', function() {
         $(this).toggleClass('done notDone');
     });
