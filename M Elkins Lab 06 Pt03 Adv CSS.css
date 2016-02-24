@@ -1,8 +1,8 @@
 body {
-     color: #556b2f;
-     font-size: 12pt;
-     font-family: Arial;
- }
+    color: #556b2f;
+    font-size: 12pt;
+    font-family: Arial;
+}
 
 #listTitle, div, input, #btnAddToList, #removeDone, table, th, td, tr {
     padding: 3px;

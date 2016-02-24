@@ -42,7 +42,6 @@ function tableDoneItems() {
 
     var $tableHead = $('#tableHead');
     for (var i = 0; i < $doneList.length; i++){
-        console.log($doneList[i]);
         var $newTableRow = $('<tr></tr>');
         var $newTableToDoData = $('<td></td>');
         $newTableToDoData.text($doneList[i].innerHTML);
@@ -53,6 +52,13 @@ function tableDoneItems() {
         $tableHead.append($newTableRow);
     }
 
-    $doneList.remove();
+    $doneList.fadeOut(500);
 
 }
+
+
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+    });
+});
